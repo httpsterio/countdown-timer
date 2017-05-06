@@ -1,3 +1,7 @@
+// compares end time to now in milliseconds and substracts
+// modulo removes whole units (minutes from seconds etc.) to leave the remained to be count
+// returns remainding time.
+
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -23,6 +27,7 @@ function initializeClock(id, endtime) {
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
+// slice(-2) to allow max 2 chars, with or without leading zero.
     daysSpan.innerHTML = t.days;
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
@@ -37,5 +42,5 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = '2017-09-02 12:00'
+var deadline = '2017-09-02 12:00';
 initializeClock('clockdiv', deadline);

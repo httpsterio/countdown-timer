@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+
 body{
     text-align: center;
     background: #21272e;
-  font-family: sans-serif;
-  font-weight: 100;
+    font-weight: 100;
+    font-family: 'Fira Mono', monospace;
 }
 
 h1{
@@ -13,7 +15,7 @@ h1{
 }
 
 #clockdiv{
-    font-family: sans-serif;
+    font-family: 'Fira Mono', monospace;
     color: #E74C3C;
     display: inline-block;
     font-weight: 100;
@@ -31,8 +33,7 @@ h1{
 #clockdiv div > span{
     padding: 15px;
     border-radius: 3px;
-    background: #21272E
-    ;
+    background: #21272E;
     display: inline-block;
 }
 
