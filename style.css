@@ -1,44 +1,80 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
 
+
+@media screen and (max-width: 720px) {
+    .clock {
+        width:40%!important;
+    }
+}
+
+* {
+    margin:0;
+    transition: 0.5s;
+}
+html, body {
+    height:100%;
+}
+
 body{
     text-align: center;
     background: #21272e;
     font-weight: 100;
     font-family: 'Fira Mono', monospace;
+    font-size: 30px;
 }
 
 h1{
-  color: #1ABC9C;
-  font-weight: 100;
-  font-size: 40px;
+  color: #E74C3C;
+  font-weight: 300;
+  font-size: 2.2em;
 }
 
-.container{
+#clockdiv {
     font-family: 'Fira Mono', monospace;
-    color: #E74C3C;
-    width:100%;
-    display: inline-block;
-    font-weight: 100;
     text-align: center;
-    font-size: 30px;
-    border:1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-wrap: wrap;
+
 }
+
 
 .clock {
-    width:25%;
+    background-color: #E74C3C;
     display: inline-block;
     color:#E74C3C;
+    flex-grow:1;
+    flex-shrink: 1;
+    margin:10px;
+    padding:20px;
 }
 
 span{
-    padding: 15px;
-    border-radius: 3px;
-    background: #21272E;
     display: inline-block;
+    color:#21272E;
+    font-size: 2em;
 }
 
 .smalltext{
-    padding-top: 5px;
-    font-size: 16px;
-    color:#1ABC9C;
+    font-size: 1em;
+    color:#21272E;
+}
+
+.page-wrap {
+    min-height: 100%;
+  /* equal to footer height */
+    margin-bottom: -50px; 
+}
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+.site-footer, .page-wrap:after {
+    height: 40px; 
+}
+.site-footer {
+    background: #1ABC9C;
+    font-size:0.8em;
+    padding-top:10px;
 }
