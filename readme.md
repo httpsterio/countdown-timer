@@ -1,7 +1,7 @@
 # Countdown Timer
 
-Updating soon.
+/[[Demo/]](http://httpster.io/henna/)
 
-A countdown timer in JavaScript for personal purposes.
+A simple countdown timer made in JavaScript.
 
-MIT License.
+MIT 
