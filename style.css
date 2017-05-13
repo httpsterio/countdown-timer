@@ -83,3 +83,8 @@ span{
     font-size:0.8em;
     padding-top:10px;
 }
+
+::selection {
+	background:#1ABC9C;
+	color:#21272e;
+}

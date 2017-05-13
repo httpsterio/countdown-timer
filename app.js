@@ -42,5 +42,8 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = '2017-09-02 12:00';
-initializeClock('clockdiv', deadline);
+var vuosipaiva = '2017-09-02 12:00';
+initializeClock('vuosipaivadiv', vuosipaiva);
+
+var lakkiaiset = '2017-06-03 12:00';
+initializeClock('lakkiaisetdiv', lakkiaiset);
