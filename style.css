@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 744px) {
     .clock {
         width:40%!important;
     }
