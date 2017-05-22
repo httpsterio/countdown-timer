@@ -47,3 +47,6 @@ initializeClock('vuosipaivadiv', vuosipaiva);
 
 var lakkiaiset = '2017-06-03 12:00';
 initializeClock('lakkiaisetdiv', lakkiaiset);
+
+var saapuminen = '2017-05-24 13:30';
+initializeClock('laskuridiv', saapuminen);
